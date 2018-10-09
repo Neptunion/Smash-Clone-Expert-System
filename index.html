@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>Steam Smash-Clones</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<link type="text/css" rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)"/>
+	<link type="text/css" rel="stylesheet" href="responsive 2.css" media="screen and (max-width: 425px)"/>
+</head>
+	<link rel="icon" href="images/icon.png">
+</head>
+ 
+<body>
+
+<div class="banner">
+	<img src="1.png" id="banner" onclick=diffImage(this)>
+</div>
+<div class="wrap">
+<div class="bottom"> 
+	<div class="content">
+	<div class="expertexplain">
+		<h2>Find the Smash-Clone for you on Steam</h2>
+		<ul>
+			<li>Smash-clone are a genre of fighting game based off the gameplay and mechanics in Super Smash Brothers, in much the same way most early fps games were based on Doom thus the term “Doom clone”. All Smash-clones have the physics engine of a platformer, fighting mechanics of a traditional fighter and a damage system which involves the character getting knockbacked more as they get hit until they eventually get launched off the stage and lose.</li>
+			<li>Use the Expert System by selecting whether or not you want the option in your game.</li>
+			<li>The Expert System will find a Smash-Clone on Steam as of 2018 that fits your selections</li>
+			<li>The conclusion will display the name of a game, its image header, some information off and a link to its steam page.</li>
+		</ul>
+		<h2>Begin your selection...</h2>
+	</div>
+		<br>
+		<form name="categories" class="formstyle" id="form">
+			<div class="formtext">
+				<h1>Expert System</h1>
+				<span>Select an option below then click Next</span>
+				<p></p>
+				<h2><span id="prompt">Should the game have Wave Dash?</span></h2>
+				<span id="explain">Wave dashing was originally a popular glitch/exploit in Super Smash Brother's Melee which allowed the player to move around much quicker than originally intended if they could pull it off. The glitch is sometimes intentionally implemented into Smash-clones to be used as a technique by players to make the game more competitive and faster</span>
+			</div>
+				<figure>
+					<img src="images/WaveDash.gif" id="explainimage">
+					<br>
+					<figcaption id="imagetext">Mario wavedashing forwards and backwards in Super Smash Brothers Melee</figcaption>
+				</figure>
+				<select name="itemList" id="itemList">
+	    			<option value="a">Yes</option>
+	    			<option value="b">No</option>
+	  			</select>
+				<p></p>
+
+				<input name="submit" type="button" value="Submit" onClick="submitChoice()" class="button">			
+				<input name="reset" type="button" value="Reset" onClick="resetPage()" class="button">
+	
+    	</form>
+		<p></p>
+		<h2 id="conclusion">Conclusion...</h2>
+		<span id="conclusionexplain"></span>
+		<p></p>
+        <img src="images/blank.png" id="img"/>
+        <p></p>
+	</div>	
+	<script src="scrES.js"></script>
+</div>
+</div>
+</body>
+</html>
