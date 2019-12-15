@@ -114,7 +114,7 @@ function submitChoice() {
 		clearList();
 		document.getElementById('conclusion').innerHTML ='King of the Couch: Zoovival is the game for you';
 		document.getElementById('conclusionexplain').innerHTML ='According to it\'s <a href="https://store.steampowered.com/app/724350/King_of_the_Couch_Zoovival/"> steam page</a> "Zoovival is the latest evolution of the platform battle arena game genre! Fight as an animal, with a wide assortment of weapons, on multiple unique battle arenas"';
-		document.getElementById("img").src = "images/Zoo.png";
+		document.getElementById("img").src = "images/Zoo.jpg";
 	}
 	if (textSelect == 'No' && attribute == 'Online') {
 		clearList();
